@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/ic_add_circle_black_24dp" />
 
     <ListView
-        android:id="@+id/peopleItem"
+        android:id="@+id/productItem"
         android:layout_width="380dp"
         android:layout_height="499dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
