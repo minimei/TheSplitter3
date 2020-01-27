@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//This page allows user to choose between splitting the bill evenly or by item
+
 public class Home extends AppCompatActivity {
 
     Button button1;

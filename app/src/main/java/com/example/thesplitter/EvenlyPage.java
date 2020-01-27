@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+//This page allows user to split bill evenly among all the people involved in the bill
+
 public class EvenlyPage extends AppCompatActivity {
 
     @Override
