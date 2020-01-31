@@ -1,17 +1,24 @@
 package com.example.thesplitter;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.DialogFragment;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class ByItemPage extends AppCompatActivity {
 
     ImageButton imageButton1;
     ImageButton imageButton2;
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,16 @@ public class ByItemPage extends AppCompatActivity {
                 startActivity(new Intent(ByItemPage.this, EditBillPage.class));
             }
         });
+
+        button = (Button) findViewById(R.id.byItemPageButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogFragment dialog = SelectItemToAddPeopleDialog.newInstance();
+                dialog.show(getSupportFragmentManager(), "tag");
+            }
+        });
+
 
     }
 

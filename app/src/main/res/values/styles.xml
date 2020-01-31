@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name = "FullscreenDialogTheme" parent ="Theme.AppCompat.Light.DialogWhenLarge">
+
+        <item name = "android:actionBarItemBackground">@color/colorAccent</item>
+        <item name = "windowNoTitle">true</item>
+        <item name = "android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+    </style>
+
 </resources>

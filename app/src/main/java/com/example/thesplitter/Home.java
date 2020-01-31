@@ -13,6 +13,7 @@ public class Home extends AppCompatActivity {
 
     Button button1;
     Button button2;
+    Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class Home extends AppCompatActivity {
 
         Button button1 = (Button) findViewById(R.id.evenlyPageButton);
         Button button2 = (Button) findViewById(R.id.byItemPageButton);
+        Button button3 = (Button) findViewById(R.id.logoutButton);
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +36,13 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Home.this, ByItemPage.class));
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, MainActivity.class));
             }
         });
     }
